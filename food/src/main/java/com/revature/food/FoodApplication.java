@@ -22,7 +22,7 @@ public class FoodApplication {
 @RefreshScope
 @RestController
 class MessageRestController {
-	@Value("${message: hello Default}")
+	@Value("${message: hello, hello Default}")
 	private String message;
 	
 	@RequestMapping("/message")
